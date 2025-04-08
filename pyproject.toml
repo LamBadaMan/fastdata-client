@@ -1,0 +1,16 @@
+[project]
+name = "bbmirror-client"
+version = "0.1.0"
+description = "Lightweight client for Bloomberg FastAPI wrapper"
+authors = [{ name = "Joel Val"}]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "requests",
+    "python-dotenv",
+    "pydantic"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
