@@ -76,3 +76,8 @@ build/
 ########
 *.gem
 *.rbc
+
+# Environment variable #
+########################
+
+.env
