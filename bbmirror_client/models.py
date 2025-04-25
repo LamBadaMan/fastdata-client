@@ -20,3 +20,10 @@ class BdsRequest(BaseModel):
     field: str
     options: Dict[str, Any] = {}
     overrides: List[Dict[str, Any]] = []
+
+class BdipRequest(BaseModel):
+    ticker: str
+    event_type: str = "TRADE"
+    interval: int = 1
+    start_datetime: str
+    end_datetime: str

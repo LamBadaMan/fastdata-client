@@ -19,4 +19,7 @@ def bds(data):
     response = requests.post(f"{BASE_API_URL}/bds/", headers=HEADERS, data=json.dumps(data))
     return json.loads(response.content.decode("utf-8"))
 
+def bdip(data):
+    response = requests.post(f"{BASE_API_URL}/bdip/", headers=HEADERS, data=json.dumps(data))
+    return json.loads(response.content.decode("utf-8"))
 

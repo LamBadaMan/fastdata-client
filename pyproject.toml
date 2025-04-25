@@ -1,7 +1,7 @@
 [project]
 name = "bbmirror-client"
 version = "0.1.0"
-description = "Lightweight client for Bloomberg FastAPI wrapper"
+description = "Lightweight client for bbmirror"
 authors = [{ name = "Joel Val"}]
 readme = "README.md"
 requires-python = ">=3.7"

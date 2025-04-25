@@ -1,15 +1,11 @@
-# BBMirror-Client
+# bbmirror-client
 
-A lightweight Python client for interacting with the Bloomberg FastAPI wrapper (`bbmirror`). This client provides request helpers for the main endpoints: `bdp`, `bdh`, and `bds`.
-
-It is designed to be used from notebooks, internal scripts, or other applications without requiring the full FastAPI server.
-
+## Overview
+A lightweight Python client for interacting with `bbmirror`. This client provides request helpers for the main endpoints: `bdp`, `bdh`, and `bds`. It is designed to be used from notebooks, internal scripts, or other applications without requiring the full FastAPI server.
 
 ## Installation
-
 Set the API base URL by creating a .env file in your project:
 API_BASE_URL=http://your-fastapi-host:8000
-
 
 ## Usage Example
 
