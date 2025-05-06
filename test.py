@@ -1,15 +1,21 @@
-from bbmirror_client import bdp
+from fastdata_client.clients.bloomberg import bdp
+from fastdata_client.clients.gie import get_lng_lso
 
-data = {
-    "tickers": ["AAPL US EQUITY"],
-    "fields": ["PX_LAST"],
-    "options": {},
-    "overrides": []
+# data_bb = {
+#     "tickers": ["AAPL US EQUITY"],
+#     "fields": ["PX_LAST"],
+#     "options": {},
+#     "overrides": []
+# }
+
+data_gie = {
+    "target": "fluxys_lng",
+    "start_date": "2020-01-01",
+    "end_date": "2022-07-10"
 }
 
-response = bdp(data)
+# response_bb = bdp(data_bb)
+response_gie = get_lng_lso(data_gie)
 
-if response.ok:
-    print(response.json())
-else:
-    print("Error:", response.status_code, response.text)
+# print(response_bb)
+print(response_gie)
