@@ -1,7 +1,7 @@
 [project]
-name = "bbmirror-client"
+name = "fastdata-client"
 version = "0.1.0"
-description = "Lightweight client for bbmirror"
+description = "Lightweight client for fastdata"
 authors = [{ name = "Joel Val"}]
 readme = "README.md"
 requires-python = ">=3.7"
